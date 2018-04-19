@@ -1,0 +1,27 @@
+<% include partials/top.ejs %>
+
+
+<form action="/articles/add" method="POST">
+    <div class="form-group mt-2">
+        <label for="">Title</label>
+        <input name='title' type="text" class="form-control">
+    </div>
+    
+    <div>
+        <label for="">Body</label>
+        <textarea name='body' type="text" class="form-control"></textarea>
+    </div>
+    <input type="submit" value='Submit' class="btn mt-2">
+</form>
+
+
+<% include partials/bottom.ejs %>
+
+
+
+
+
+
+
+    
+<% include partials/bottom.ejs %>

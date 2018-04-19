@@ -1,0 +1,10 @@
+<% include partials/top %>
+
+    <h1><%= article.title %></h1>
+    <h5>Written by : <%= article.author %></h5>
+    <p><%= article.body%></p>
+    <hr>
+    <a type="button" class="btn btn-default" href="/articles/edit/<%= article._id %>">Edit</a>
+    <a href="/articles/delete/<%= article._id %>" class="btn btn-danger">Delete</a>
+
+<% include partials/bottom %>

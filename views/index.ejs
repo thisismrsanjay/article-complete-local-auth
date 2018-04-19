@@ -1,0 +1,15 @@
+<% include partials/top.ejs %>
+
+
+    <ul class="list-group">
+    <% for(var i =0;i<articles.length;i++) {%>
+        <li class="list-group-item"><a href="/articles/<%= articles[i]._id %>"><%= articles[i].title + articles[i].body %></a></li>
+    <%}%>
+    </ul>
+
+    <div class="bg-info clearfix">
+            <button type="button" class="btn btn-secondary float-left">Example Button floated left</button>
+            <button type="button" class="btn btn-secondary float-right">Example Button floated right</button>
+          </div>
+    
+<% include partials/bottom.ejs %>
